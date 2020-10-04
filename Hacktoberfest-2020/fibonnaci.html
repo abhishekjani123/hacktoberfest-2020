@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script>
+            let a=prompt("enter the number for upto n term in fibonacci series");
+            let perv=-1,curr=1,next;
+            for(let b=0;b<a;b++)
+            {
+                next=perv+curr;
+                perv=curr;
+                curr=next;
+                document.write(next+"</br>");
+            }
+            
+        </script>
+    </head>
+    </html>
