@@ -1,0 +1,86 @@
+<html>
+    <head>
+           <script>
+               function show_prompt()
+{
+var name=prompt("chose any number up to 10");
+if (name!=null && name!="")
+{
+switch (name)
+{
+                    case "0":
+                    document.write("abc");
+                    break;
+                    case "1":
+                    document.write("abcd");
+                    break;
+                    case "2":
+                    document.write("abcde");
+                    break;
+                    case "3":
+                    document.write("abcdef");
+                    break;
+                    case "4":
+                    document.write("abcdefg");
+                    break;
+                    case "5":
+                    document.write("abcdefgh");
+                    break;
+                    case "6":
+                    document.write("abcdefghi");
+                    break;
+                    case "7":
+                    document.write("abcdefghij");
+                    break;
+                    case "8":
+                    document.write("abcdefghijk");
+                    break;
+                    case "9":
+                    document.write("abcdefghijkl");
+                    break;
+                    case "10":
+                    document.write("abcdefghijklm");
+                    break;
+}
+}
+}
+               function check()
+               {
+                   var u = document.getElementById("user").value;
+                   var p = document.getElementById("user1").value;
+                   if(u==p)
+                   {
+                    document.getElementById("my").innerHTML="  you have wright a correct password now submit your form "
+                   }                   
+               }
+           </script>
+           <style>
+                body
+                {
+                    background-color: aquamarine;
+                }
+            </style>
+    </head>
+    <body>
+            <fieldset>
+                    <legend><h2><b>login form</b></h2></legend>
+                    EMAIL:<input type="email" placeholder="email" style="border-radius: 20px; box-shadow: 4px 4px darkmagenta; color: darkmagenta;"><br><br>
+                    PASSWORD:<input type="password" placeholder="password" style="border-radius: 20px; box-shadow: 4px 4px darkmagenta; color: darkmagenta;">
+                    <br><br><input type="submit"  onclick="display()" placeholder="submit" style="border-radius: 20px; box-shadow: 4px 4px darkmagenta; color: darkmagenta;">
+                    &nbsp; &nbsp;<input type="reset" placeholder="reset" style="border-radius: 20px; box-shadow: 4px 4px darkmagenta; color: darkmagenta;">
+                    <br><br><marquee><span style="border: 10px solid red;">thank you for login </span></marquee>
+                </fieldset>
+        <fieldset>
+                <legend><h2><b>forgot password</b></h2></legend>
+            EMAIL:<input type="email" placeholder="email" style="border-radius: 20px; box-shadow: 4px 4px darkmagenta; color: darkmagenta;"><br><br>
+            <input type="button" onclick="show_prompt()"  style="border-radius: 20px; box-shadow: 4px 4px darkmagenta; color: darkmagenta;"  value="prompt box" /><br><br>
+        <p id="my"></p>
+        password:<input type="password" id="user"  style="border-radius: 20px; box-shadow: 4px 4px darkmagenta; color: darkmagenta;"  required><br><br>
+        re-enter password:<input type="password" id="user1" style="border-radius: 20px; box-shadow: 4px 4px darkmagenta; color: darkmagenta;" required><br><br>
+        <h2><b>click below button for check your password is wright?</b></h2>
+        <button onclick="check()"  style="border-radius: 20px; box-shadow: 4px 4px darkmagenta; color: darkmagenta;"  required>click here</button><br><br>
+        <input type="submit" placeholder="submit" style="border-radius: 20px; box-shadow: 4px 4px darkmagenta; color: darkmagenta;">&nbsp; &nbsp;
+        <input type="reset" placeholder="reset" style="border-radius: 20px; box-shadow: 4px 4px darkmagenta; color: darkmagenta;">    
+    </fieldset>
+    </body>
+    </html>
